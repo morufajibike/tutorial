@@ -1,0 +1,15 @@
+---
+- name: Demo Ansible Playbook
+  hosts: all
+
+  tasks:
+    - name: Copy demo file with permissions
+      ansible.builtin.copy:
+        src: ./demo.txt
+        dest: /tmp/demo_copy.txt
+        mode: '0644'
+    - name: Upgrade all apt packages
+      apt:
+        force_apt_get: yes
+        upgrade: dist
+      become: yes
