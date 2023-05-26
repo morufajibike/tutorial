@@ -33,6 +33,9 @@ We are going to create 2 managed nodes with Vagrant and VirtualBox. This is just
     ```
     ansible -i inventory all -m ping
     ```
+    If you see the following confirmation prompt after you execute the above command, type "YES" and press enter on your keyboard:
+
+    ![ansible ping confirmation](images/ansible-ping.png)
 
     - If you encounter errors with SSH, possibly with `hosts2`, use the following command to check the machine:
         ```
