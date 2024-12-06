@@ -3,5 +3,5 @@
 # See [here](https://www.terraform.io/language/providers) for more information.
 
 provider "aws" {
-  region  = var.region
+  region = var.region
 }
